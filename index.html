@@ -1,0 +1,70 @@
+<html>
+<head>
+    <title>JAVA SCRIBT</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="text.css">
+    
+
+</head>
+
+<body>
+<div class="w-75 m-auto  p-2">
+    <div class="form-groub">
+        <label for="">productName</label>
+        <input type="text" name=""class="form-control" id="prodctname">
+        <small>product name required</small>
+    </div>
+    <div class="form-groub">
+        <label for="">prodct price</label>
+        <input type="text" name=""class="form-control" id="prodctprice">
+        <small>prodct price  required</small>
+    </div>
+    <div class="form-groub">
+        <label for="">prodct category</label>
+        <input type="text" name=""class="form-control" id="prodctcategory">
+        <small>product category required</small>
+    </div>
+    <div class="form-groub">
+        <label for="">prodct desc</label>
+        <input type="text" name=""class="form-control" id="prodctdesc">
+        <small>product desc required</small>
+    </div>
+
+    <button onclick="addproduct()" class="mt-5 btn btn-danger">add product </button>
+    </div>
+
+    <div class="m-auto w-75">
+        <label>search by name:</label>
+        <input onkeyup="searchproduct(this.value)" type="text" id="serchaboutbroducts" class="form-control " >
+    </div>
+    <div class="container">
+        <div class="w-75 m-auto py-5">
+            <table class="table">
+                <thead>
+                    
+                    <th>Index</th>
+                    <th>prodctName</th>
+                    <th>prodctPrice</th>
+                    <th>prodctcategory</th>
+                    <th>prodctdesc</th>
+                    <th>update</th>
+                    <th>delete</th>
+                </thead>
+                <tbody id="tableData">
+
+</tbody>
+
+            </table>
+        </div>
+    </div>
+</div>
+  
+<script src="js/bootstrap.bundle.min.js"></script>
+
+<script src="k.js"></script>
+</body>
+
+
+
+</html>
